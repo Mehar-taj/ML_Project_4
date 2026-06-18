@@ -161,7 +161,7 @@ Example:
 
 ```python
 model.fit(X_train,Y_train)
-
+```
 The model learns patterns from training data and builds a prediction system.
 
 📊 Model Evaluation
