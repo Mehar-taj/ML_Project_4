@@ -203,13 +203,17 @@ The trained Machine Learning model predicts wine quality based on the given inpu
 ```text
 Wine Quality: [7]
 ```
-📈 Results
+# 📈 Results
 
 The Machine Learning model successfully predicts wine quality based on various chemical properties of wine.
 
-This project demonstrates how Machine Learning techniques can be applied to analyze and predict quality scores in the food and beverage industry.
+This project demonstrates how Machine Learning techniques can be applied to analyze and predict quality scores in the **food and beverage industry**.
 
-📁 Project Structure
+---
+
+# 📁 Project Structure
+
+```text
 Wine-Quality-Prediction/
 │
 ├── Wine_Quality_Prediction.ipynb
@@ -217,45 +221,57 @@ Wine-Quality-Prediction/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-🚀 Future Improvements
+```
+# 🚀 Future Improvements
 
 Future improvements for this project include:
 
-Compare multiple Machine Learning algorithms.
-Improve model performance using hyperparameter tuning.
-Add advanced data visualization dashboards.
-Deploy the model using Streamlit.
-Build a web-based wine quality prediction application.
-📚 Key Learnings
+- Compare multiple Machine Learning algorithms.
+- Improve model performance using hyperparameter tuning.
+- Add advanced data visualization dashboards.
+- Deploy the model using Streamlit.
+- Build a web-based wine quality prediction application.
+
+---
+
+# 📚 Key Learnings
 
 Through this project, I gained practical experience in:
 
-Data Analysis
-Data Preprocessing
-Feature Engineering
-Regression Models
-Model Evaluation
-Machine Learning Deployment
-🌱 Learning Journey
+- Data Analysis
+- Data Preprocessing
+- Feature Engineering
+- Regression Models
+- Model Evaluation
+- Machine Learning Deployment
+
+---
+
+# 🌱 Learning Journey
 
 This project is part of my continuous learning journey in:
 
-Artificial Intelligence (AI)
-Machine Learning (ML)
-Data Science
-Generative AI
+- Artificial Intelligence (AI)
+- Machine Learning (ML)
+- Data Science
+- Generative AI
 
-Each project helps me improve my understanding of solving real-world problems using data-driven and intelligent systems.
+Each project helps me improve my understanding of solving real-world problems using **data-driven and intelligent systems**.
 
-👩‍💻 Author
-Mehar-taj
+---
 
-Aspiring Data Scientist | Machine Learning Enthusiast | AI & Generative AI Learner
+# 👩‍💻 Author
 
-🔗 GitHub:
+## Mehar-taj
+
+**Aspiring Data Scientist | Machine Learning Enthusiast | AI & Generative AI Learner**
+
+🔗 **GitHub:**  
 https://github.com/Mehar-taj
 
-🔗 LinkedIn:
+🔗 **LinkedIn:**  
 https://www.linkedin.com/in/mehar-taj-a654102b6
+
+---
 
 ⭐ If you found this project useful, consider giving it a star and exploring my other Machine Learning projects.
