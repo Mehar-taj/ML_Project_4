@@ -1,16 +1,15 @@
-# 🚗 Car Price Prediction using Machine Learning
+# 🍷 Wine Quality Prediction using Machine Learning
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:36D1DC,100:5B86E5&height=250&section=header&text=Car%20Price%20Prediction&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=40" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=250&section=header&text=Wine%20Quality%20Prediction&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=40" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python" />
-  <img src="https://img.shields.io/badge/Machine%20Learning-Linear%20Regression-orange" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Regression-orange" />
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-blue?logo=pandas" />
   <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?logo=numpy" />
   <img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn" />
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter" />
   <img src="https://img.shields.io/badge/Status-Completed-success" />
 </p>
 
@@ -18,279 +17,218 @@
 
 # 📖 Project Overview
 
-This project develops a **Car Price Prediction System using Machine Learning** to estimate the selling price of used cars based on different vehicle specifications.
+This project develops a **Wine Quality Prediction System using Machine Learning** to predict the quality of wine based on its chemical properties.
 
-The model learns patterns from historical car data and predicts the resale value by analyzing important features such as:
+The model analyzes different physicochemical characteristics of wine such as acidity, sugar content, pH value, alcohol percentage, and other features to estimate wine quality.
 
-- Manufacturing Year
-- Present Price
-- Kilometers Driven
-- Fuel Type
-- Seller Type
-- Transmission Type
-- Number of Previous Owners
+Machine Learning techniques are used to learn patterns from historical wine data and predict the quality score of new wine samples.
 
-A **Linear Regression algorithm** is used to build the prediction model because it is effective for solving regression problems where the output value is continuous.
+This project demonstrates the complete Machine Learning workflow including:
 
-This project represents my practical learning journey in:
-
-- Artificial Intelligence
-- Machine Learning
-- Data Science
-- Generative AI
-
-The project covers the complete Machine Learning workflow including data collection, data preprocessing, exploratory data analysis, model training, evaluation, and prediction.
+- Data Loading
+- Exploratory Data Analysis
+- Data Preprocessing
+- Model Training
+- Model Evaluation
+- Quality Prediction
 
 ---
 
 # 🎯 Project Objectives
 
-The main objectives of this project are:
+The objectives of this project are:
 
-* Analyze a real-world automobile dataset.
-* Perform data exploration and preprocessing.
-* Convert categorical features into numerical format.
-* Build a regression-based Machine Learning model.
-* Predict used car selling prices.
-* Evaluate model performance using regression metrics.
-* Understand Machine Learning applications in the automobile industry.
+* Analyze wine quality datasets.
+* Understand factors affecting wine quality.
+* Perform data preprocessing.
+* Build a Machine Learning prediction model.
+* Predict wine quality based on input features.
+* Apply Machine Learning techniques to real-world problems.
 
 ---
 
 # 📂 Dataset Information
 
-**Dataset Name:** Car Data Dataset
+**Dataset:** Wine Quality Dataset
 
-The dataset contains information about used cars along with their market selling prices.
+The dataset contains chemical properties of wine samples along with their quality ratings.
 
-### Dataset Features
+### Features:
 
 | Feature | Description |
 |---------|-------------|
-| Car_Name | Name of the vehicle |
-| Year | Manufacturing year |
-| Present_Price | Current showroom price |
-| Kms_Driven | Distance travelled by car |
-| Fuel_Type | Type of fuel used |
-| Seller_Type | Dealer or Individual seller |
-| Transmission | Manual or Automatic |
-| Owner | Number of previous owners |
-| Selling_Price | Car resale price (Target Variable) |
+| Fixed Acidity | Amount of fixed acids present |
+| Volatile Acidity | Amount of volatile acids |
+| Citric Acid | Citric acid content |
+| Residual Sugar | Remaining sugar content |
+| Chlorides | Salt concentration |
+| Free Sulfur Dioxide | Free SO₂ level |
+| Total Sulfur Dioxide | Total SO₂ level |
+| Density | Density of wine |
+| pH | Acidity level |
+| Sulphates | Sulphate content |
+| Alcohol | Alcohol percentage |
+| Quality | Wine quality score |
 
 ---
 
 # ⚙️ Technologies Used
 
-<p>
-
-- 🐍 Python
-- 📊 NumPy
-- 🐼 Pandas
-- 🤖 Scikit-Learn
-- 📈 Linear Regression
-- 📒 Jupyter Notebook
-
-</p>
+* Python
+* NumPy
+* Pandas
+* Scikit-Learn
+* Machine Learning Algorithms
+* Jupyter Notebook
 
 ---
 
-# 🔄 Machine Learning Workflow
+# 🔄 Project Workflow
 
 ## 1. Data Collection
 
-The used car dataset was loaded for analysis and model development.
+The wine quality dataset was loaded and prepared for analysis.
 
-Libraries used:
+---
+
+## 2. Exploratory Data Analysis (EDA)
+
+Performed analysis to understand:
+
+* Dataset structure
+* Feature information
+* Missing values
+* Statistical properties
+* Feature relationships
+
+---
+
+## 3. Data Preprocessing
+
+Performed preprocessing steps:
+
+* Checked missing values.
+* Separated input features and target variable.
+* Prepared data for model training.
+
+---
+
+## 4. Feature Selection
+
+Input features:
+
+- Fixed Acidity
+- Volatile Acidity
+- Citric Acid
+- Residual Sugar
+- Chlorides
+- Free Sulfur Dioxide
+- Total Sulfur Dioxide
+- Density
+- pH
+- Sulphates
+- Alcohol
+
+
+Target:
+
+- Wine Quality
+
+---
+
+# ✂️ Train-Test Split
+
+The dataset was divided into training and testing datasets.
+
+| Dataset | Percentage |
+|---------|------------|
+| Training Data | 80% |
+| Testing Data | 20% |
+
+---
+
+# 🤖 Machine Learning Model
+
+The Machine Learning model learns the relationship between wine properties and quality score.
+
+The trained model predicts the quality of unseen wine samples.
+
+---
+
+# 🚀 Model Training
+
+Example:
 
 ```python
-import numpy as np
-import pandas as pd
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn import metrics
-```
-2. Exploratory Data Analysis (EDA)
-
-Performed data analysis to understand:
-
-Dataset structure
-Number of records
-Data types
-Missing values
-Unique categories
-Feature information
-
-Example:
-
-df.info()
-
-df.isnull().sum()
-3. Data Preprocessing
-
-Machine Learning algorithms require numerical input, therefore categorical variables were converted into numerical values.
-
-Encoding Categorical Features
-Seller Type
-Dealer → 0
-Individual → 1
-Fuel Type
-Petrol → 0
-Diesel → 1
-CNG → 2
-Transmission
-Manual → 0
-Automatic → 1
-4. Feature Selection
-
-The dataset was divided into:
-
-Independent Features (Input)
-Year
-Present_Price
-Kms_Driven
-Fuel_Type
-Seller_Type
-Transmission
-Owner
-Dependent Feature (Target)
-Selling_Price
-
-Code:
-
-X = df.drop(['Car_Name','Selling_Price'],axis=1)
-
-Y = df['Selling_Price']
-5. Train-Test Split
-
-The dataset was divided into training and testing data.
-
-Dataset	Percentage
-Training Data	80%
-Testing Data	20%
-
-Code:
-
-X_train, X_test, Y_train, Y_test = train_test_split(
-    X,
-    Y,
-    test_size=0.2,
-    random_state=2
-)
-🤖 Machine Learning Model
-Linear Regression
-
-Linear Regression is a supervised machine learning algorithm used to predict continuous numerical values.
-
-In this project, it learns the relationship between car features and selling price to estimate the resale value of vehicles.
-
-Advantages:
-
-✔ Simple and efficient
-✔ Easy to understand
-✔ Works well for regression problems
-✔ Provides continuous predictions
-
-🚀 Model Training
-
-The Linear Regression model was trained using the training dataset.
-
-model = LinearRegression()
-
 model.fit(X_train,Y_train)
+
+The model learns patterns from training data and builds a prediction system.
+
 📊 Model Evaluation
 
-The model performance was evaluated using:
+The model performance is evaluated using suitable regression metrics:
 
 R² Score
+Mean Absolute Error (MAE)
+Mean Squared Error (MSE)
+🍷 Wine Quality Prediction
 
-R² Score measures how well the model explains the variation in the target variable.
-
-Code:
-
-training_prediction = model.predict(X_train)
-
-metrics.r2_score(
-    training_prediction,
-    Y_train
-)
-
-Testing:
-
-test_prediction = model.predict(X_test)
-
-metrics.r2_score(
-    test_prediction,
-    Y_test
-)
-🚗 Car Price Prediction
-
-The trained model predicts the selling price of a new vehicle based on user input.
+The trained model predicts wine quality using new input values.
 
 Example:
 
-Input
-(2014,3.35,27000,0,0,0,0)
-Output
-Predicted Car Price: ₹X Lakhs
+prediction = model.predict(input_data_reshape)
+
+print("Wine Quality:", prediction)
+Output:
+Wine Quality: [7]
 📈 Results
 
-The model successfully predicts used car prices based on vehicle specifications.
+The Machine Learning model successfully predicts wine quality based on chemical properties of wine.
 
-The Linear Regression model demonstrates that Machine Learning can be effectively used for automobile price estimation.
+The project demonstrates how Machine Learning can help analyze and predict quality scores in the food and beverage industry.
 
 📁 Project Structure
-Car-Price-Prediction/
+Wine-Quality-Prediction/
 │
-├── Car_Price_Prediction.ipynb
-├── cardata.csv
+├── Wine_Quality_Prediction.ipynb
+├── winequality.csv
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 🚀 Future Improvements
-
-Future enhancements for this project:
-
-Apply Feature Scaling techniques.
-Perform advanced Exploratory Data Analysis.
-Compare different Machine Learning algorithms:
-Random Forest Regression
-XGBoost Regression
-Gradient Boosting Regression
-Create interactive dashboards.
-Develop a Streamlit web application.
-Deploy the Machine Learning model online.
+Compare multiple Machine Learning algorithms.
+Improve accuracy using hyperparameter tuning.
+Add data visualization dashboard.
+Deploy the model using Streamlit.
+Build a web-based wine quality prediction application.
 📚 Key Learnings
 
 Through this project, I gained practical experience in:
 
-Data Collection
-Data Cleaning
-Exploratory Data Analysis
+Data Analysis
 Data Preprocessing
 Feature Engineering
-Regression Algorithms
+Regression Models
 Model Evaluation
-Predictive System Development
+Machine Learning Deployment
 🌱 Learning Journey
 
-This project is part of my continuous learning journey in:
+This project is part of my learning journey in:
 
-✨ Artificial Intelligence (AI)
-✨ Machine Learning (ML)
-✨ Data Science
-✨ Generative AI
-
-Each project helps me improve my problem-solving skills and understand how intelligent systems are developed using real-world data.
-
+Artificial Intelligence (AI)
+Machine Learning (ML)
+Data Science
+Generative AI
 👩‍💻 Author
 Mehar-taj
 
 Aspiring Data Scientist | Machine Learning Enthusiast | AI & Generative AI Learner
 
-🔗 GitHub:
+GitHub:
 https://github.com/Mehar-taj
 
-🔗 LinkedIn:
+LinkedIn:
 https://www.linkedin.com/in/mehar-taj-a654102b6
 
 ⭐ If you found this project useful, consider giving it a star and exploring my other Machine Learning projects.
